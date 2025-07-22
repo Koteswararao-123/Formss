@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <img src="./formpic1.jpg" alt="Form Banner Image" width="100%">
+
+    <form>
+        <fieldset>
+            <legend>Application Details</legend>
+            <table>
+                <tr>
+                    <td><label for="Name">Name:</label></td>
+                    <td><input type="text" name="Name" id="Name" required></td>
+                    <td><label for="Father">Father's Name:</label></td>
+                    <td><input type="text" name="Father" id="Father" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">Date of Birth:</label></td>
+                    <td><input type="date" name="DOB" id="DOB" required></td>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="Gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Age As on:</label></td>
+                    <td><input type="text" name="Age" id="Age" required></td>
+                    <td><label for="Aadhaar">Aadhaar No:</label></td>
+                    <td><input type="text" name="Aadhaar" id="Aadhaar" maxlength="12" minlength="12" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Whatsapp">WhatsApp No:</label></td>
+                    <td><input type="text" name="Whatsapp" id="Whatsapp" maxlength="10" minlength="10" required></td>
+                    <td><label for="email">E-mail ID:</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Photo">Photo:</label></td>
+                    <td><input type="file" name="Photo" id="Photo" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential Address Details</legend>
+            <table>
+                <tr>
+                    <td><label for="Address">Applicant's Address:</label></td>
+                    <td><textarea rows="4" cols="22" name="Address" id="Address" required></textarea></td>
+                    <td><label for="District">District:</label></td>
+                    <td>
+                        <select name="District" id="District" required>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Mandal">Mandal:</label></td>
+                    <td>
+                        <select name="Mandal" id="Mandal" required>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                    <td><label for="Village">Village:</label></td>
+                    <td>
+                        <select name="Village" id="Village" required>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pincode">Pincode*:</label></td>
+                    <td><input type="text" name="Pincode" id="Pincode" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <table>
+                <tr>
+                    <td><label for="City">City*:</label></td>
+                    <td>
+                        <select name="City" id="City" required>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="PassType">Pass Type*:</label></td>
+                    <td>
+                        <select name="PassType" id="PassType" required>
+                            <option value="" disabled selected>------Select------</option>
+                            <option>Greater Pass</option>
+                            <option>GENERAL ORDINARY ROUTE PASS MTLY</option>
+                            <option>GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+                            <option>ORDINARY PASS</option>
+                            <option>METRO EXPRESS PASS</option>
+                            <option>METRO DELUXE PASS</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            <table>
+                <tr>
+                    <td><label for="Payment">Payment Mode*:</label></td>
+                    <td>
+                        <select name="Payment" id="Payment" required>
+                            <option disabled selected>Select Payment Mode</option>
+                            <option>Payment Counter</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="PassDeliveryMode">Pass Delivery Mode*:</label></td>
+                    <td>
+                        <select name="PassDeliveryMode" id="PassDeliveryMode" required>
+                            <option disabled selected>Select Pass Delivery Mode</option>
+                            <option>At Counter</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Center">Center at which you Collect Pass:</label></td>
+                    <td>
+                        <select name="Center" id="Center" required>
+                            <option disabled selected>--------------Select-----------------</option>
+                            <option>RTC ABIDS--HYD [23/07/2025]</option>
+                            <option>RTC JBS--HYD [23/07/2025]</option>
+                            <option>RTC KUKATPALLY--HYD [23/07/2025]</option>
+                            <!-- Add more if needed -->
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Verification</legend>
+            <img src="./Captcha.jpg" alt="Captcha Image"><br>
+            <input type="text" name="captcha" placeholder="Enter Captcha" required>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
